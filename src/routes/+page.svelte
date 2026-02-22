@@ -48,14 +48,14 @@
 			Supporting families in Portsmouth
 		</div>
 		<h1 class="hero-title animate-fade-in-up animate-delay-1">
-			Supporting Home Education in Portsmouth
+			Supporting home education in Portsmouth
 		</h1>
 		<p class="hero-subtitle animate-fade-in-up animate-delay-2">
 			Connecting families, sharing resources, and building community
 		</p>
 		<div class="hero-actions animate-fade-in-up animate-delay-3">
-			<a href="#contact" class="btn btn-primary">Get in Touch</a>
-			<a href="#about" class="btn btn-secondary">Learn More</a>
+			<a href="#contact" class="btn btn-primary">Get in touch</a>
+			<a href="#about" class="btn btn-secondary">Learn more</a>
 		</div>
 
 		<div class="hero-decoration" aria-hidden="true">
@@ -85,7 +85,7 @@
 
 <section id="activities" class="section activities-section">
 	<div class="container">
-		<h2 class="section-heading">What We Do</h2>
+		<h2 class="section-heading">What we do</h2>
 		<p class="section-intro activities-intro">
 			From resources to advocacy, we support every aspect of the home education journey.
 		</p>
@@ -101,7 +101,7 @@
 						<line x1="21" y1="30" x2="30" y2="30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
 					</svg>
 				</div>
-				<h3 class="activity-title">Educational Resources</h3>
+				<h3 class="activity-title">Educational resources</h3>
 				<p class="activity-desc">Helping families find materials, tools, and local learning opportunities</p>
 			</article>
 
@@ -116,7 +116,7 @@
 						<line x1="21" y1="14" x2="27" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
 					</svg>
 				</div>
-				<h3 class="activity-title">Community Connections</h3>
+				<h3 class="activity-title">Community connections</h3>
 				<p class="activity-desc">Enabling peer-led education through parent-organised activities, group learning, and workshops</p>
 			</article>
 
@@ -130,7 +130,7 @@
 						<path d="M24 32c2-3 4-4 6-4s4 1 6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
 					</svg>
 				</div>
-				<h3 class="activity-title">Events &amp; Meetups</h3>
+				<h3 class="activity-title">Events &amp; meetups</h3>
 				<p class="activity-desc">Hosting networking events, social meet-ups, and online platforms for sharing</p>
 			</article>
 
@@ -157,7 +157,7 @@
 						<circle cx="36" cy="14" r="3" fill="var(--color-mint)" stroke="currentColor" stroke-width="2"/>
 					</svg>
 				</div>
-				<h3 class="activity-title">SEN Support</h3>
+				<h3 class="activity-title">SEN support</h3>
 				<p class="activity-desc">Providing guidance and connections for families with Special Educational Needs</p>
 			</article>
 
@@ -169,7 +169,7 @@
 						<path d="M32 22l4 4 6-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 					</svg>
 				</div>
-				<h3 class="activity-title">Parent-Led Activities</h3>
+				<h3 class="activity-title">Parent-led activities</h3>
 				<p class="activity-desc">Supporting parents in leading and organising their own educational activities</p>
 			</article>
 		</div>
@@ -178,7 +178,7 @@
 
 <section id="contact" class="section contact-section texture-overlay">
 	<div class="container">
-		<h2 class="section-heading">Get in Touch</h2>
+		<h2 class="section-heading">Get in touch</h2>
 		<p class="section-intro contact-intro">
 			Whether you're new to home education or looking to connect with other families, we'd love to hear from you.
 		</p>
