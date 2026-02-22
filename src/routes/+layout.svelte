@@ -80,7 +80,6 @@
 				Portsmouth, PO1 1DH
 			</address>
 			<p class="footer-links-contact">
-				<a href="tel:02394007124">023 9400 7124</a><br>
 				<a href="mailto:info@pheg.org.uk">info@pheg.org.uk</a>
 			</p>
 		</div>

@@ -21,7 +21,6 @@
 		"alternateName": "PHEG",
 		"url": "https://pheg.org.uk",
 		"logo": "https://pheg.org.uk/logo.jpg",
-		"telephone": "02394007124",
 		"email": "info@pheg.org.uk",
 		"address": {
 			"@type": "PostalAddress",
@@ -196,15 +195,6 @@
 				<a href="mailto:info@pheg.org.uk" class="contact-value">info@pheg.org.uk</a>
 			</div>
 
-			<div class="contact-card">
-				<div class="contact-icon" aria-hidden="true">
-					<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-						<path d="M7 4h5l3 7-4 2c2 4 5 7 9 9l2-4 7 3v5c0 2-1 3-3 3C14 28 4 18 4 7c0-2 1-3 3-3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-					</svg>
-				</div>
-				<h3 class="contact-label">Phone</h3>
-				<a href="tel:02394007124" class="contact-value">023 9400 7124</a>
-			</div>
 
 			<div class="contact-card">
 				<div class="contact-icon" aria-hidden="true">
@@ -476,7 +466,7 @@
 
 	@media (min-width: 1024px) {
 		.contact-grid {
-			grid-template-columns: repeat(4, 1fr);
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 
