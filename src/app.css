@@ -4,8 +4,7 @@
    Warm · Community · Trustworthy
    ============================================================ */
 
-/* --- Google Font: Nunito (friendly, rounded headings) --- */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
+
 
 /* ============================================================
    Design Tokens
@@ -29,18 +28,20 @@
 	--color-turquoise-pale: #d4f0ef;
 	--color-mint:         #e2f5f4;
 
-	--color-amber:        #5bc4c0;
-	--color-amber-light:  #8dd9d6;
-	--color-amber-pale:   #e2f5f4;
-	--color-honey:        #3aa8a4;
+	/* Aliases (legacy token names mapped to new palette) */
+	--color-amber:        var(--color-turquoise);
+	--color-amber-light:  var(--color-turquoise-light);
+	--color-amber-pale:   var(--color-mint);
+	--color-honey:        var(--color-turquoise-dark);
+
 
 	--color-terracotta:   #b8522a;
 	--color-terracotta-light: #d4825f;
 
-	--color-forest:       #1a3a6b;
-	--color-forest-deep:  #112a50;
-	--color-sage:         #5bc4c0;
-	--color-sage-light:   #8dd9d6;
+	--color-forest:       var(--color-navy);
+	--color-forest-deep:  var(--color-navy-deep);
+	--color-sage:         var(--color-turquoise);
+	--color-sage-light:   var(--color-turquoise-light);
 
 	--color-text:         #112a50;
 	--color-text-muted:   rgba(17, 42, 80, 0.65);
@@ -330,9 +331,11 @@ ul, ol {
 	            transform var(--duration-normal) var(--ease-out);
 }
 
-.card:hover {
-	box-shadow: var(--shadow-lg);
-	transform: translateY(-4px);
+@media (hover: hover) {
+	.card:hover {
+		box-shadow: var(--shadow-lg);
+		transform: translateY(-4px);
+	}
 }
 
 

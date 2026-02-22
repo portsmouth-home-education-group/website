@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pheg.org.uk/sitemap.xml

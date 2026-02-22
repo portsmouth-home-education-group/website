@@ -1,6 +1,45 @@
 <svelte:head>
 	<title>PHEG — Portsmouth Home Education Group</title>
 	<meta name="description" content="Portsmouth Home Education Group supports home-educating families in Portsmouth with resources, community connections, events, and advocacy." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://pheg.org.uk/" />
+	<meta property="og:title" content="PHEG — Portsmouth Home Education Group" />
+	<meta property="og:description" content="Supporting home-educating families in Portsmouth with resources, community connections, events, and advocacy." />
+	<meta property="og:image" content="https://pheg.org.uk/logo.jpg" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:site_name" content="Portsmouth Home Education Group" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="PHEG — Portsmouth Home Education Group" />
+	<meta name="twitter:description" content="Supporting home-educating families in Portsmouth with resources, community connections, events, and advocacy." />
+	<meta name="twitter:image" content="https://pheg.org.uk/logo.jpg" />
+
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "Portsmouth Home Education Group",
+		"alternateName": "PHEG",
+		"url": "https://pheg.org.uk",
+		"logo": "https://pheg.org.uk/logo.jpg",
+		"telephone": "02394007124",
+		"email": "info@pheg.org.uk",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "The HIVE Portsmouth Hub, 22 Edinburgh Road",
+			"addressLocality": "Portsmouth",
+			"postalCode": "PO1 1DH",
+			"addressCountry": "GB"
+		},
+		"areaServed": {
+			"@type": "City",
+			"name": "Portsmouth",
+			"containedInPlace": {
+				"@type": "Country",
+				"name": "United Kingdom"
+			}
+		},
+		"description": "Portsmouth Home Education Group exists to promote, maintain, improve and advance the education of children in Portsmouth and surrounding communities who are educated outside of full-time state or private institutions."
+	})}</script>`}
 </svelte:head>
 
 <section id="home" class="hero texture-overlay">
@@ -175,11 +214,11 @@
 					</svg>
 				</div>
 				<h3 class="contact-label">Address</h3>
-				<p class="contact-value">
+				<address class="contact-value" style="font-style: normal;">
 					The HIVE Portsmouth Hub<br>
 					22 Edinburgh Road<br>
 					Portsmouth, PO1 1DH
-				</p>
+				</address>
 			</div>
 
 			<div class="contact-card">
@@ -191,7 +230,7 @@
 					</svg>
 				</div>
 				<h3 class="contact-label">Social</h3>
-				<p class="contact-value">Follow us on Facebook</p>
+				<a href="https://www.facebook.com/PortsmouthHEGroup" class="contact-value" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a>
 			</div>
 		</div>
 	</div>

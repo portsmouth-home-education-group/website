@@ -8,7 +8,7 @@
 	const navLinks = [
 		{ href: '#home', label: 'Home' },
 		{ href: '#about', label: 'About' },
-		{ href: '#activities', label: 'Activities' },
+		{ href: '#activities', label: 'What We Do' },
 		{ href: '#contact', label: 'Contact' }
 	];
 
@@ -74,11 +74,11 @@
 		</div>
 
 		<div class="footer-contact">
-			<p class="footer-address">
+			<address class="footer-address">
 				The HIVE Portsmouth Hub<br>
 				22 Edinburgh Road<br>
 				Portsmouth, PO1 1DH
-			</p>
+			</address>
 			<p class="footer-links-contact">
 				<a href="tel:02394007124">023 9400 7124</a><br>
 				<a href="mailto:info@pheg.org.uk">info@pheg.org.uk</a>
@@ -86,7 +86,8 @@
 		</div>
 
 		<div class="footer-legal">
-			<p>PHEG is a registered charity dedicated to supporting home-educating families in Portsmouth and surrounding communities.</p>
+			<p>Portsmouth Home Education Group is a charitable organisation dedicated to supporting home-educating families in Portsmouth and surrounding communities.</p>
+			<p class="footer-charity-number">Charity registration pending</p>
 		</div>
 	</div>
 </footer>
@@ -293,5 +294,16 @@
 		font-size: var(--text-xs);
 		color: var(--color-sage);
 		line-height: var(--leading-relaxed);
+	}
+
+	.footer-address {
+		font-style: normal;
+	}
+
+	.footer-charity-number {
+		font-size: var(--text-xs);
+		margin-top: var(--space-xs);
+		opacity: 0.7;
+		font-style: italic;
 	}
 </style>
