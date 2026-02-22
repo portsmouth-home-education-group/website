@@ -1,5 +1,5 @@
 {
-	"name": "pheg-website",
+	"name": "website",
 	"compatibility_date": "2025-01-01",
 	"assets": {
 		"directory": "./build"
