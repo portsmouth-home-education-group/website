@@ -1,0 +1,441 @@
+/* ============================================================
+   PHEG Design System
+   Portsmouth Home Education Group
+   Warm · Community · Trustworthy
+   ============================================================ */
+
+/* --- Google Font: Nunito (friendly, rounded headings) --- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+/* ============================================================
+   Design Tokens
+   ============================================================ */
+:root {
+	/* --- Palette --- */
+	--color-cream:        #f5edc6;
+	--color-cream-dark:   #ede3b4;
+	--color-parchment:    #f0e8be;
+	--color-sand:         #ddd5a8;
+	--color-warm-white:   #faf7e8;
+
+	--color-navy:         #1a3a6b;
+	--color-navy-deep:    #112a50;
+	--color-navy-light:   #2b5194;
+	--color-navy-muted:   #3d6298;
+
+	--color-turquoise:    #5bc4c0;
+	--color-turquoise-dark: #3aa8a4;
+	--color-turquoise-light: #8dd9d6;
+	--color-turquoise-pale: #d4f0ef;
+	--color-mint:         #e2f5f4;
+
+	--color-amber:        #5bc4c0;
+	--color-amber-light:  #8dd9d6;
+	--color-amber-pale:   #e2f5f4;
+	--color-honey:        #3aa8a4;
+
+	--color-terracotta:   #b8522a;
+	--color-terracotta-light: #d4825f;
+
+	--color-forest:       #1a3a6b;
+	--color-forest-deep:  #112a50;
+	--color-sage:         #5bc4c0;
+	--color-sage-light:   #8dd9d6;
+
+	--color-text:         #112a50;
+	--color-text-muted:   rgba(17, 42, 80, 0.65);
+	--color-text-light:   rgba(17, 42, 80, 0.45);
+
+	/* --- Typography --- */
+	--font-heading: 'Nunito', 'Segoe UI', system-ui, sans-serif;
+	--font-body: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+
+	--text-xs:   0.75rem;
+	--text-sm:   0.875rem;
+	--text-base: 1rem;
+	--text-lg:   1.125rem;
+	--text-xl:   1.25rem;
+	--text-2xl:  1.5rem;
+	--text-3xl:  1.875rem;
+	--text-4xl:  2.25rem;
+	--text-5xl:  3rem;
+	--text-6xl:  3.75rem;
+
+	--leading-tight:  1.2;
+	--leading-snug:   1.35;
+	--leading-normal: 1.6;
+	--leading-relaxed: 1.75;
+
+	/* --- Spacing --- */
+	--space-xs:   0.25rem;
+	--space-sm:   0.5rem;
+	--space-md:   1rem;
+	--space-lg:   1.5rem;
+	--space-xl:   2rem;
+	--space-2xl:  3rem;
+	--space-3xl:  4rem;
+	--space-4xl:  6rem;
+	--space-5xl:  8rem;
+
+	/* --- Layout --- */
+	--max-width:       1200px;
+	--max-width-narrow: 800px;
+	--header-height:   72px;
+
+	/* --- Borders & Radii --- */
+	--radius-sm:  6px;
+	--radius-md:  12px;
+	--radius-lg:  20px;
+	--radius-xl:  28px;
+	--radius-full: 9999px;
+
+	/* --- Shadows (warm-tinted) --- */
+	--shadow-sm:  0 1px 3px rgba(17, 42, 80, 0.06), 0 1px 2px rgba(17, 42, 80, 0.04);
+	--shadow-md:  0 4px 12px rgba(17, 42, 80, 0.08), 0 2px 4px rgba(17, 42, 80, 0.04);
+	--shadow-lg:  0 10px 30px rgba(17, 42, 80, 0.10), 0 4px 8px rgba(17, 42, 80, 0.04);
+	--shadow-xl:  0 20px 50px rgba(17, 42, 80, 0.12), 0 8px 16px rgba(17, 42, 80, 0.06);
+
+	/* --- Transitions --- */
+	--ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+	--ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+	--duration-fast:   150ms;
+	--duration-normal: 300ms;
+	--duration-slow:   500ms;
+}
+
+
+/* ============================================================
+   Reset & Base
+   ============================================================ */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--header-height);
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	font-family: var(--font-body);
+	font-size: var(--text-base);
+	line-height: var(--leading-normal);
+	color: var(--color-text);
+	background-color: var(--color-cream);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+}
+
+img, svg {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	color: var(--color-forest);
+	text-decoration-color: var(--color-sage-light);
+	text-underline-offset: 3px;
+	transition: color var(--duration-fast) var(--ease-out),
+	            text-decoration-color var(--duration-fast) var(--ease-out);
+}
+
+a:hover {
+	color: var(--color-forest-deep);
+	text-decoration-color: var(--color-forest);
+}
+
+a:focus-visible {
+	outline: 3px solid var(--color-amber);
+	outline-offset: 3px;
+	border-radius: var(--radius-sm);
+}
+
+button:focus-visible {
+	outline: 3px solid var(--color-amber);
+	outline-offset: 3px;
+	border-radius: var(--radius-sm);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-heading);
+	font-weight: 700;
+	line-height: var(--leading-tight);
+	color: var(--color-forest-deep);
+}
+
+p + p {
+	margin-top: var(--space-lg);
+}
+
+ul, ol {
+	list-style: none;
+}
+
+
+/* ============================================================
+   Skip Link (Accessibility)
+   ============================================================ */
+.skip-link {
+	position: absolute;
+	top: -100%;
+	left: var(--space-md);
+	z-index: 9999;
+	padding: var(--space-sm) var(--space-lg);
+	background: var(--color-forest);
+	color: var(--color-warm-white);
+	font-weight: 600;
+	border-radius: 0 0 var(--radius-md) var(--radius-md);
+	text-decoration: none;
+	transition: top var(--duration-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
+
+/* ============================================================
+   Container
+   ============================================================ */
+.container {
+	width: 100%;
+	max-width: var(--max-width);
+	margin-inline: auto;
+	padding-inline: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding-inline: var(--space-2xl);
+	}
+}
+
+
+/* ============================================================
+   Section Rhythm
+   ============================================================ */
+.section {
+	padding-block: var(--space-3xl);
+}
+
+@media (min-width: 768px) {
+	.section {
+		padding-block: var(--space-4xl);
+	}
+}
+
+@media (min-width: 1024px) {
+	.section {
+		padding-block: var(--space-5xl);
+	}
+}
+
+.section-heading {
+	font-size: var(--text-3xl);
+	margin-bottom: var(--space-lg);
+	position: relative;
+	display: inline-block;
+}
+
+.section-heading::after {
+	content: '';
+	display: block;
+	width: 48px;
+	height: 4px;
+	background: var(--color-amber);
+	border-radius: var(--radius-full);
+	margin-top: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: var(--text-4xl);
+	}
+}
+
+.section-intro {
+	font-size: var(--text-lg);
+	color: var(--color-text-muted);
+	max-width: var(--max-width-narrow);
+	line-height: var(--leading-relaxed);
+}
+
+
+/* ============================================================
+   Buttons
+   ============================================================ */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-sm);
+	padding: var(--space-md) var(--space-xl);
+	font-family: var(--font-heading);
+	font-size: var(--text-base);
+	font-weight: 700;
+	line-height: 1;
+	border: 2px solid transparent;
+	border-radius: var(--radius-full);
+	cursor: pointer;
+	text-decoration: none;
+	transition: all var(--duration-normal) var(--ease-out);
+	white-space: nowrap;
+}
+
+.btn-primary {
+	background: var(--color-forest);
+	color: var(--color-warm-white);
+	border-color: var(--color-forest);
+}
+
+.btn-primary:hover {
+	background: var(--color-forest-deep);
+	border-color: var(--color-forest-deep);
+	box-shadow: var(--shadow-md);
+	transform: translateY(-2px);
+	color: var(--color-warm-white);
+}
+
+.btn-secondary {
+	background: transparent;
+	color: var(--color-forest);
+	border-color: var(--color-forest);
+}
+
+.btn-secondary:hover {
+	background: var(--color-forest);
+	color: var(--color-warm-white);
+	box-shadow: var(--shadow-md);
+	transform: translateY(-2px);
+}
+
+
+/* ============================================================
+   Card
+   ============================================================ */
+.card {
+	background: var(--color-warm-white);
+	border-radius: var(--radius-lg);
+	padding: var(--space-xl);
+	box-shadow: var(--shadow-sm);
+	border: 1px solid var(--color-sand);
+	transition: box-shadow var(--duration-normal) var(--ease-out),
+	            transform var(--duration-normal) var(--ease-out);
+}
+
+.card:hover {
+	box-shadow: var(--shadow-lg);
+	transform: translateY(-4px);
+}
+
+
+/* ============================================================
+   Animations
+   ============================================================ */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(24px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.animate-fade-in-up {
+	animation: fadeInUp 0.6s var(--ease-out) both;
+}
+
+.animate-fade-in {
+	animation: fadeIn 0.5s var(--ease-out) both;
+}
+
+.animate-delay-1 { animation-delay: 0.1s; }
+.animate-delay-2 { animation-delay: 0.2s; }
+.animate-delay-3 { animation-delay: 0.3s; }
+.animate-delay-4 { animation-delay: 0.4s; }
+.animate-delay-5 { animation-delay: 0.5s; }
+.animate-delay-6 { animation-delay: 0.6s; }
+
+
+/* ============================================================
+   Noise Texture Overlay (atmosphere)
+   ============================================================ */
+.texture-overlay {
+	position: relative;
+}
+
+.texture-overlay::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	opacity: 0.025;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+	background-repeat: repeat;
+	background-size: 200px 200px;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.texture-overlay > * {
+	position: relative;
+	z-index: 1;
+}
+
+
+/* ============================================================
+   Responsive Helpers
+   ============================================================ */
+@media (max-width: 767px) {
+	.hide-mobile {
+		display: none !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.hide-desktop {
+		display: none !important;
+	}
+}
+
+
+/* ============================================================
+   Reduced Motion
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+
+	html {
+		scroll-behavior: auto;
+	}
+}
