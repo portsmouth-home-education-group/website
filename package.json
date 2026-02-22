@@ -1,0 +1,23 @@
+{
+  "name": "pheg-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "packageManager": "pnpm@10.17.1",
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.53.0",
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "svelte": "^5.53.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
