@@ -71,13 +71,19 @@
 		<h2 class="section-heading">About PHEG</h2>
 		<div class="about-content">
 			<p class="section-intro">
-				Portsmouth Home Education Group exists to promote, maintain, improve and advance the education of children in Portsmouth and surrounding communities who are educated outside of full-time state or private institutions. We do this by providing and assisting in the provision of educational resources and opportunities that enrich their learning experience.
+				Home educating in Portsmouth? You’re not on your own.
 			</p>
 			<p class="section-intro">
-				We benefit home-educating families by providing access to educational resources, peer support, and advocacy. By connecting families, we enable parents to share knowledge, organise group activities, and support each other — reducing isolation and enhancing educational opportunities.
+				Portsmouth Home Education Group exists to support families in Portsmouth and the surrounding areas who educate their children outside of full-time school. Our aim is to promote and strengthen home education locally by helping families access opportunities, share knowledge, and feel part of a wider community.
 			</p>
 			<p class="section-intro">
-				Beyond individual families, PHEG benefits the wider community by supporting a well-educated and socially engaged group of young people who develop independence and critical thinking through home education.
+				We are a parent-led group, and much of what happens through PHEG grows from families themselves — their experience, their skills, and their willingness to organise things together. By connecting families, we help reduce isolation and make it easier to find practical support, shared activities, and people who understand the journey.
+			</p>
+			<p class="section-intro">
+				Home education looks different in every household. Some families prefer structure; others take a more flexible or interest-led approach. We respect that diversity and aim to provide a space where families can find support that fits their own way of doing things.
+			</p>
+			<p class="section-intro">
+				When families feel connected and supported, young people benefit too, through shared learning opportunities, social connection, and the confidence that comes from being part of a wider community.
 			</p>
 		</div>
 	</div>
@@ -86,92 +92,16 @@
 <section id="activities" class="section activities-section">
 	<div class="container">
 		<h2 class="section-heading">What we do</h2>
-		<p class="section-intro activities-intro">
-			From resources to advocacy, we support every aspect of the home education journey.
-		</p>
-
-		<div class="activities-grid">
-			<article class="card activity-card animate-fade-in-up animate-delay-1">
-				<div class="activity-icon" aria-hidden="true">
-					<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-						<rect x="8" y="6" width="24" height="32" rx="3" stroke="currentColor" stroke-width="2.5" fill="none"/>
-						<rect x="16" y="10" width="24" height="32" rx="3" stroke="currentColor" stroke-width="2.5" fill="var(--color-amber-pale)"/>
-						<line x1="21" y1="18" x2="35" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-						<line x1="21" y1="24" x2="35" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-						<line x1="21" y1="30" x2="30" y2="30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-					</svg>
-				</div>
-				<h3 class="activity-title">Educational resources</h3>
-				<p class="activity-desc">Helping families find materials, tools, and local learning opportunities</p>
-			</article>
-
-			<article class="card activity-card animate-fade-in-up animate-delay-2">
-				<div class="activity-icon" aria-hidden="true">
-					<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-						<circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2.5" fill="var(--color-mint)"/>
-						<circle cx="32" cy="16" r="6" stroke="currentColor" stroke-width="2.5" fill="var(--color-amber-pale)"/>
-						<circle cx="24" cy="30" r="6" stroke="currentColor" stroke-width="2.5" fill="var(--color-mint)"/>
-						<line x1="20" y1="19" x2="21" y2="25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-						<line x1="28" y1="19" x2="27" y2="25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-						<line x1="21" y1="14" x2="27" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-					</svg>
-				</div>
-				<h3 class="activity-title">Community connections</h3>
-				<p class="activity-desc">Enabling peer-led education through parent-organised activities, group learning, and workshops</p>
-			</article>
-
-			<article class="card activity-card animate-fade-in-up animate-delay-3">
-				<div class="activity-icon" aria-hidden="true">
-					<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-						<rect x="6" y="10" width="36" height="26" rx="4" stroke="currentColor" stroke-width="2.5" fill="var(--color-amber-pale)"/>
-						<circle cx="18" cy="22" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
-						<circle cx="30" cy="22" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
-						<path d="M12 32c2-3 4-4 6-4s4 1 6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-						<path d="M24 32c2-3 4-4 6-4s4 1 6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-					</svg>
-				</div>
-				<h3 class="activity-title">Events &amp; meetups</h3>
-				<p class="activity-desc">Hosting networking events, social meet-ups, and online platforms for sharing</p>
-			</article>
-
-			<article class="card activity-card animate-fade-in-up animate-delay-4">
-				<div class="activity-icon" aria-hidden="true">
-					<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-						<path d="M24 8v28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-						<path d="M24 8c6 0 14 3 14 9s-8 9-14 6" stroke="currentColor" stroke-width="2.5" fill="var(--color-mint)" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M24 18c-5 0-12 3-12 8s7 8 12 5" stroke="currentColor" stroke-width="2.5" fill="var(--color-amber-pale)" stroke-linecap="round" stroke-linejoin="round"/>
-						<rect x="18" y="36" width="12" height="4" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
-					</svg>
-				</div>
-				<h3 class="activity-title">Advocacy</h3>
-				<p class="activity-desc">Advocating for home education rights with local authorities and policymakers</p>
-			</article>
-
-			<article class="card activity-card animate-fade-in-up animate-delay-5">
-				<div class="activity-icon" aria-hidden="true">
-					<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-						<path d="M24 40c-9 0-16-7-16-16S15 8 24 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-						<path d="M24 8c9 0 16 7 16 16s-7 16-16 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" fill="none"/>
-						<circle cx="24" cy="20" r="5" stroke="currentColor" stroke-width="2.5" fill="var(--color-amber-pale)"/>
-						<path d="M18 33c1.5-3 3.5-5 6-5s4.5 2 6 5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-						<circle cx="36" cy="14" r="3" fill="var(--color-mint)" stroke="currentColor" stroke-width="2"/>
-					</svg>
-				</div>
-				<h3 class="activity-title">SEN support</h3>
-				<p class="activity-desc">Providing guidance and connections for families with Special Educational Needs</p>
-			</article>
-
-			<article class="card activity-card animate-fade-in-up animate-delay-6">
-				<div class="activity-icon" aria-hidden="true">
-					<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-						<circle cx="24" cy="14" r="6" stroke="currentColor" stroke-width="2.5" fill="var(--color-amber-pale)"/>
-						<path d="M12 38c0-7 5-12 12-12s12 5 12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-						<path d="M32 22l4 4 6-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-					</svg>
-				</div>
-				<h3 class="activity-title">Parent-led activities</h3>
-				<p class="activity-desc">Supporting parents in leading and organising their own educational activities</p>
-			</article>
+		<div class="about-content">
+			<p class="section-intro">
+				PHEG supports families in practical, straightforward ways. We signpost educational resources and local opportunities that families may wish to explore, and we support parents in organising workshops, group sessions and meetups so young people can learn alongside others and build friendships.
+			</p>
+			<p class="section-intro">
+				We facilitate opportunities for families to connect, share experiences and learn from one another. For those navigating additional needs, we aim to offer guidance and help families find others with similar experiences.
+			</p>
+			<p class="section-intro">
+				Where appropriate, we also advocate for home-educating families and seek to ensure their voices are heard in local conversations that affect them.
+			</p>
 		</div>
 	</div>
 </section>
@@ -367,7 +297,7 @@
 	<div class="container">
 		<h2 class="section-heading">Get in touch</h2>
 		<p class="section-intro contact-intro">
-			Whether you're new to home education or looking to connect with other families, we'd love to hear from you.
+			Whether you are new to home education or simply looking to connect with other families in the area, we would be pleased to hear from you. You don’t need to have everything figured out before getting in touch — sometimes the first step is simply starting a conversation.
 		</p>
 
 		<div class="contact-grid">
@@ -407,7 +337,7 @@
 					</svg>
 				</div>
 				<h3 class="contact-label">Social</h3>
-				<a href="https://www.facebook.com/PortsmouthHEGroup" class="contact-value" target="_blank" rel="noopener noreferrer">Follow us on Facebook</a>
+				<a href="https://www.facebook.com/PortsmouthHEGroup" class="contact-value" target="_blank" rel="noopener noreferrer">Follow us on Facebook for updates and upcoming activities</a>
 			</div>
 		</div>
 	</div>
@@ -563,72 +493,6 @@
 
 	.activities-section {
 		background: var(--color-cream);
-	}
-
-	.activities-intro {
-		margin-bottom: var(--space-2xl);
-	}
-
-	.activities-grid {
-		display: grid;
-		gap: var(--space-lg);
-		grid-template-columns: 1fr;
-	}
-
-	@media (min-width: 640px) {
-		.activities-grid {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	@media (min-width: 1024px) {
-		.activities-grid {
-			grid-template-columns: repeat(3, 1fr);
-			gap: var(--space-xl);
-		}
-	}
-
-	.activity-card {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-md);
-		padding: var(--space-xl) var(--space-xl) var(--space-2xl);
-	}
-
-	.activity-icon {
-		width: 56px;
-		height: 56px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: var(--color-mint);
-		border-radius: var(--radius-md);
-		color: var(--color-forest);
-		flex-shrink: 0;
-	}
-
-	.activity-card:nth-child(2) .activity-icon,
-	.activity-card:nth-child(4) .activity-icon {
-		background: var(--color-amber-pale);
-		color: var(--color-amber);
-	}
-
-	.activity-card:nth-child(5) .activity-icon {
-		background: rgba(184, 82, 42, 0.1);
-		color: var(--color-terracotta);
-	}
-
-	.activity-title {
-		font-family: var(--font-heading);
-		font-size: var(--text-xl);
-		font-weight: 700;
-		color: var(--color-forest-deep);
-	}
-
-	.activity-desc {
-		font-size: var(--text-base);
-		color: var(--color-text-muted);
-		line-height: var(--leading-relaxed);
 	}
 
 	/* FAQ Section */
