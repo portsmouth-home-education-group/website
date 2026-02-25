@@ -9,7 +9,7 @@
 		{ href: '#home', label: 'Home' },
 		{ href: '#about', label: 'About' },
 		{ href: '#activities', label: 'What we do' },
-		{ href: '#faq', label: 'FAQ' },
+		{ href: '#faq', label: 'FAQs' },
 		{ href: '#contact', label: 'Contact' }
 	];
 
